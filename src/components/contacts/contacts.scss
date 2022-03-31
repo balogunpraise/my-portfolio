@@ -1,0 +1,84 @@
+.contact{
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(17,24,39, 0.9)),url(https://images.pexels.com/photos/248921/pexels-photo-248921.jpeg);
+    background-size: contain;
+    .form-container{
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        background: rgba(0,0,0,.9);
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid black;
+        z-index: 30;
+        .media{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            div{
+                color: white;
+                display: flex;
+                margin: 30px;
+                align-items: center;
+                gap: 5px;
+                p{
+                    font-family: 'Red Hat Mono', monospace;
+                }
+            }
+        }
+        h3{
+            color: white;
+            font-size: 20px;
+            font-family: 'Red Hat Mono', monospace;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            .normal{
+                outline: none;
+                background: none;
+                width: 500px;
+                height: 50px;
+                color: white;
+                font-size: 16px;
+                padding: 0 10px;
+                border: none;
+                border-bottom: 1px white solid;
+            }
+            .text{
+                border: 1px solid white;
+                background: none;
+                width: 500px;
+                outline: none;
+                height: 150px;
+                padding: 10px;
+                font-size: 16px;
+                color: white;
+                margin-top: 10px;
+                resize: none;
+            }
+            .submit{
+                width: 500px;
+                height: 45px;
+                background: none;
+                color: white;
+                border: 1px white solid;
+                font-size: 16px;
+                cursor: pointer;
+                font-family: 'Red Hat Mono', monospace;
+                transition: all .5s ease;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
